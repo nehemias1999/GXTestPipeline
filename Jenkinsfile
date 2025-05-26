@@ -8,7 +8,7 @@ pipeline {
 
         MSBuildEXEPath = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe"
         GenexusPath = "C:\\Program Files (x86)\\GeneXus\\GeneXus16BT1"
-        BBPath = "C:\\Models\\CapacitacionBT"
+        KBPath = "C:\\Models\\CapacitacionBT"
         KBEnvironment = 'JavaOracle'
         ExecutionDataFilePath = "C:\\Users\\nsalazar\\Desktop\\Eliminar_cliente.json"
         GXServerUsername = 'local\\sa_jenkins_genexus'
@@ -19,7 +19,7 @@ pipeline {
 						 '/p:KBPath="%KBPath%" ' +
                          '/p:EnvironmentName="%KBEnvironment%" ' +
                          '/p:ExecutionDataFilePath="%ExecutionDataFilePath%" ' +
-                         '/p:GXServerUser="%GXServerUser%" ' +
+                         '/p:GXServerUser="%GXServerUsername%" ' +
                          '/p:GXServerPass="%GXServerPassword%" ' +
                          '/p:JUnitTestFilePath="%JUnitTestFilePath%" ' +
                          '/t:RunTestsList'
