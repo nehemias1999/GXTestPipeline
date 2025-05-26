@@ -23,7 +23,7 @@ pipeline {
 						 '/p:JUnitTestFilePath="C:\\Users\\nsalazar\\Desktop\\Eliminar cliente.json" ' +
 						 '/p:GXServerUser="%ServerUsername%" ' +
 						 '/p:GXServerPass="%ServerPassword%" ' +
-                         '/t:RunTests'
+                         '/t:RunAllTests'
 
     }
 
