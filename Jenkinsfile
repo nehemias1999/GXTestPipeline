@@ -4,9 +4,7 @@ pipeline {
 
     environment {
 
-        // Ajustar estas rutas según tu instalación
-
-        MSBuildEXEPath = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe"
+        MSBuildEXEPath = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\MSBuild\\Current\\Bin\\MSBuild.exe"
         GenexusPath = "C:\\Program Files (x86)\\GeneXus\\GeneXus16BT1"
         KBPath = "C:\\Models\\CapacitacionBT"
         KBEnvironment = 'JavaOracle'
