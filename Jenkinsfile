@@ -15,7 +15,7 @@ pipeline {
         GXServerPassword = '567NTb0L4L4wjK4hZkAl'
         JUnitTestFilePath = "C:\\Users\\nsalazar\\Desktop\\Result.xml"
 
-        runTestsScript = '"%MSBuildEXEPath%" "%GenexusPath%"\\GXtest.msbuild ' +
+        runTestsScript = '"%MSBuildEXEPath%" "%GenexusPath%\\GXtest.msbuild" ' +
 						 '/p:KBPath="%KBPath%" ' +
                          '/p:EnvironmentName="%KBEnvironment%" ' +
                          '/p:ExecutionDataFilePath="%ExecutionDataFilePath%" ' +
