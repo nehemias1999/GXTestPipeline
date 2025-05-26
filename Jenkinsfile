@@ -12,7 +12,7 @@ pipeline {
         DbaseServerPassword = '567NTb0L4L4wjK4hZkAl'
         WorkingDirectory = "C:\\Models\\CapacitacionBT"
         WorkingVersion = 'Estimaciones'
-        WorkingEnvironment = 'JavaMySQL'
+        WorkingEnvironment = 'JavaOracle'
         ServerUsername = 'local\\sa_jenkins_genexus'
         ServerPassword = '567NTb0L4L4wjK4hZkAl'
 
