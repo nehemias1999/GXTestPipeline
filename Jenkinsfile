@@ -8,22 +8,21 @@ pipeline {
 
         MSBuildEXEPath = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe"
         GenexusPath = "C:\\Program Files (x86)\\GeneXus\\GeneXus16BT1"
-        DbaseServerUsername = 'local\\sa_jenkins_genexus'
-        DbaseServerPassword = '567NTb0L4L4wjK4hZkAl'
-        WorkingDirectory = "C:\\Models\\CapacitacionBT"
-        WorkingVersion = 'Estimaciones'
-        WorkingEnvironment = 'JavaOracle'
-        ServerUsername = 'local\\sa_jenkins_genexus'
-        ServerPassword = '567NTb0L4L4wjK4hZkAl'
+        BBPath = "C:\\Models\\CapacitacionBT"
+        KBEnvironment = 'JavaOracle'
+        ExecutionDataFilePath = "C:\\Users\\nsalazar\\Desktop\\Eliminar_cliente.json"
+        GXServerUsername = 'local\\sa_jenkins_genexus'
+        GXServerPassword = '567NTb0L4L4wjK4hZkAl'
+        JUnitTestFilePath = "C:\\Users\\nsalazar\\Desktop\\Result.xml"
 
         runTestsScript = '"%MSBuildEXEPath%" "%GenexusPath%"\\GXtest.msbuild ' +
-						 '/p:KBPath="%WorkingDirectory%" ' +
-						 '/p:EnvironmentName="%WorkingEnvironment%" ' +
-						 '/p:TestType="Unit" ' +
-						 '/p:JUnitTestFilePath="C:\\Users\\nsalazar\\Desktop\\Eliminar cliente.json" ' +
-						 '/p:GXServerUser="%ServerUsername%" ' +
-						 '/p:GXServerPass="%ServerPassword%" ' +
-                         '/t:RunAllTests'
+						 '/p:KBPath="%KBPath%" ' +
+                         '/p:EnvironmentName="%KBEnvironment%" ' +
+                         '/p:ExecutionDataFilePath="%ExecutionDataFilePath%" ' +
+                         '/p:GXServerUser="%GXServerUser%" ' +
+                         '/p:GXServerPass="%GXServerPassword%" ' +
+                         '/p:JUnitTestFilePath="%JUnitTestFilePath%" ' +
+                         '/t:RunTestsList'
 
     }
 
